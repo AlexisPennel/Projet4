@@ -14,8 +14,38 @@ button {
 }
 
 a:focus {
-    outline: 3px solid blue;
-    box-shadow: 0px 0px 10px blue;
+    outline: none;
+}
+
+a:focus-visible {
+    border: 7px solid red;
+    box-shadow: 0px 0px 5px red;
+    transform: scale(1.1);
+}
+
+button:focus-visible {
+    border: 10px solid red;
+    box-shadow: 0px 0px 15px 5px red;
+    transform: scale(1.1);
+}
+
+form input:focus{
+    outline: 5px solid red !important ;
+    box-shadow: 0px 0px 15px 5px red;   
+}
+
+form textarea:focus {
+    outline: 5px solid red !important ;
+    box-shadow: 0px 0px 15px 5px red; 
+}
+
+.social a:focus-visible {
+    outline: 7px solid red !important ;
+    box-shadow: 0px 0px 5px red; 
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a:hover {
@@ -778,9 +808,6 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {
-    background-color: #364577;
-}
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
